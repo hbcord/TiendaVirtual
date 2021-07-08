@@ -1,0 +1,18 @@
+
+/* CUSTOM PROPERTY */
+:root {
+    --primario: #101010;
+}
+
+/* GLOBAL */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+}
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
