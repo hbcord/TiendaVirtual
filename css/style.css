@@ -41,9 +41,20 @@ img {
     max-width: 120rem;
 }
 h1 {
+    font-size: 4rem;
+}
+h2 {
+    font-size: 3rem;
+}
+h3 {
+    font-size: 2rem;
+}
+h1, h2, h3 {
+    text-transform: uppercase;
     text-align: center;
     color: var(--secundarioOscuro);
     font-family: var(--fuentePrincipal);
+    font-weight: bold;
 }
 
 /** HEADER */
@@ -154,4 +165,49 @@ h1 {
         grid-column: 2 / 4;
         grid-row: 5 / 6;
     }
+}
+
+/** NOSOTROS */
+.nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 2rem;
+}
+@media (min-width: 768px) {
+    .nosotros {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+.nosotros__informacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    max-width: 60rem;
+}
+.nosotros_imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+@media (min-width: 768px) {
+    .servicios {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+    }
+}
+.servicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
