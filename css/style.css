@@ -237,12 +237,19 @@ h1, h2, h3 {
     gap: 1rem;
     width: 100%;
 }
+.formulario__campo {
+    border: .5rem solid var(--primarioOscuro);
+    background-color: var(--primario);
+    font-size: 2rem;
+    color: var(--blanco);
+    padding: 1rem;
+}
 .formulario__enviar {
     background-color: var(--secundario);
     font-family: var(--fuentePrincipal);
     text-transform: uppercase;
     font-size: 2rem;
-    padding: 1rem 0;
+    padding: 2rem;
     border: none;
     grid-column: 1 / 3;
 }
